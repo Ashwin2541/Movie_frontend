@@ -3,7 +3,8 @@
  * In dev, Vite proxies `/api` to http://localhost:5000 (see vite.config.js).
  * In production, set VITE_API_URL to your deployed backend URL.
  */
-const API_BASE = import.meta.env.VITE_API_URL || '/api';
+
+const API_BASE = 'https://movie-backend-zbsz.onrender.com/api'
 
 async function request(path) {
   let res;
